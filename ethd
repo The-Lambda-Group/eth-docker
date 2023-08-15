@@ -2568,11 +2568,6 @@ else
     OWNER=$(stat -c '%U' .)
 fi
 
-if [ "${OWNER}" == "root" ]; then
-    echo "Please install eth-docker as a non-root user."
-    exit 1
-fi
-
 ENV_FILE=.env
 __during_update=0
 
